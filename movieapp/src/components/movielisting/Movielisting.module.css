@@ -1,0 +1,60 @@
+.ml{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:10px;
+}
+.ml img{
+    width:98%;
+    height: 50%;
+    border-radius: 10%;
+}
+.ml>div{
+    text-align: left;
+    padding:10px;
+    border:1px solid #9e9e9e;
+    height: 600px;
+    font-size: 12px;
+    background-color: blanchedalmond;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 10px;
+
+    
+     
+}
+.ml>div>button:nth-of-type(1){
+    background-color: rgb(62, 143, 62);
+    color: white;
+    padding:5px 8px;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    border:none;
+    font-weight: 600;
+}
+.ml>div>button:nth-of-type(2){
+    background-color: rgb(228, 96, 96);
+    color: white;
+    padding:5px 8px;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    border:none;
+    font-weight: 600;
+
+}
+@media screen and (min-width: 501px)and (max-width:1099px){
+    .ml{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap:10px;
+    }
+    
+}
+@media screen and(min-width:0px)and (max-width:500px){
+    .ml{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap:10px;
+    }
+    
+} 
