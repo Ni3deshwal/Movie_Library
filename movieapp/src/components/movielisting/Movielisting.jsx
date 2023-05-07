@@ -7,19 +7,21 @@ function Movielisting() {
     const [searchValue, setSearchValue] = useState('');
     const [select, setSelect] = useState('all');
     const [year,setYear]=useState('all')
+    const [newData,setNewData]=useState([])
 
     const handleInputChange = (event) => {
         setSearchValue(event.target.value);
     };
 
     const handleSearchClick = () => {
-        const newdata = data.filter((e, i) => {
+        const newdata = newData.filter((item) => {
+            return Object.keys(item).filter(key => key !== 'image'&& key!=="_id").some((key) => {
+              return item[key].toString().toLowerCase().includes(searchValue.toLowerCase());
+            });
+          });
 
-            return e.title.toLowerCase().includes(searchValue.toLowerCase())
-        }
 
-
-        )
+        
         setData(newdata)
     };
     const handledelete = async (id) => {
@@ -40,6 +42,8 @@ function Movielisting() {
         const response = await fetch('https://kind-cyan-abalone-kilt.cyclic.app/movie')
         const data = await response.json()
         setData(data.data)
+        console.log(data)
+        setNewData(data.data)
     }
     const handlechange = (e) => {
         setSelect(e.target.value)

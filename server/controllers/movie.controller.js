@@ -23,6 +23,7 @@ const getmovie=async(req,res)=>{
     }
 }
 const postmovie=async(req,res)=>{
+    // console.log(req.body)
     try {
         const {title,description,rating,cast,synopsis,genre,year,director,image}=req.body;
         if(!title || !description || !rating||!cast||!synopsis || !genre||!year||!director||!image)
@@ -38,6 +39,7 @@ const postmovie=async(req,res)=>{
     }
 }
 const editmovie=async(req,res)=>{
+
     try {
         const movies=await Movie.findByIdAndUpdate(req.params.id,{...req.body},{new:true});
         res.send({data:movies});
