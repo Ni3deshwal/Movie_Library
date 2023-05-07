@@ -42,15 +42,7 @@
     font-weight: 600;
 
 }
-@media screen and (min-width: 501px)and (max-width:1099px){
-    .ml{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        gap:10px;
-    }
-    
-}
-@media screen and(min-width:0px)and (max-width:500px){
+@media screen and (max-width:400px){
     .ml{
         display: grid;
         grid-template-columns: repeat(1,1fr);
@@ -58,3 +50,66 @@
     }
     
 } 
+@media screen and (min-width: 401px)and (max-width:699px){
+    .ml{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap:10px;
+    }
+    .ml>div{
+        text-align: left;
+        padding:10px;
+        border:1px solid #9e9e9e;
+        height: 800px;
+        font-size: 12px;
+        background-color: blanchedalmond;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        border-radius: 10px;
+    
+        
+         
+    }
+    
+}
+@media screen and (min-width: 700px)and (max-width:952px){
+    .ml{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap:10px;
+    }
+    .ml>div{
+        text-align: left;
+        padding:10px;
+        border:1px solid #9e9e9e;
+        height: 800px;
+        font-size: 12px;
+        background-color: blanchedalmond;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        border-radius: 10px;
+    
+        
+         
+    }
+}
+@media screen and (min-width: 953px)and (max-width:1440px){
+    .ml{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap:10px;
+    }
+    .ml>div{
+        text-align: left;
+        padding:10px;
+        margin:auto;
+        border:1px solid #9e9e9e;
+        height: 800px;
+        font-size: 12px;
+        background-color: blanchedalmond;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        border-radius: 10px;
+    
+        
+         
+    }
+    
+}

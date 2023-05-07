@@ -165,7 +165,7 @@ function Editmovie() {
                     onChange={handleChange}
                 />
             </div>
-            <button type="submit">Submit</button>
+            <button type="submit">Update</button>
         </form>
 
     )

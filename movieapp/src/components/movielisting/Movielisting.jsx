@@ -87,17 +87,18 @@ function Movielisting() {
                     placeholder="Search..."
                     value={searchValue}
                     onChange={handleInputChange}
+                    style={{margin:"15px 5px",padding:"8px",borderRadius:'10px'}}
                 />
-                <button onClick={handleSearchClick}>Search</button>
+                <button onClick={handleSearchClick} style={{margin:"15px 0px",padding:"8px",borderRadius:'10px'}}>Search</button>
             </div>
             <label htmlFor="Sort by movie name">Sort by title</label>
-            <select name="" id="" onChange={handlechange}>
+            <select name="" id="" onChange={handlechange} style={{margin:"15px",padding:"8px",borderRadius:'10px'}}>
                 <option value="all">All</option>
                 <option value="asc">Ascending</option>
                 <option value="dsc">Decending</option>
             </select><br />
             <label htmlFor="Sort by year">Sort by Year</label>
-            <select name="" id="" onChange={handleyear}>
+            <select name="" id="" onChange={handleyear}style={{margin:"0px 0px 15px 15px",padding:"8px",borderRadius:'10px'}}>
                 <option value="all">All</option>
                 <option value="htl"> Recent</option>
                 <option value="lth">Oldest</option>
@@ -109,6 +110,7 @@ function Movielisting() {
                     data.map((element, index) => {
                         return (
                             <div key={index} >
+                                
                                 <img src={element.image} alt="" onClick={() => nevigate(`/movie/${element._id}`)} />
                                 <h4><b>Title: </b> {element.title}</h4>
                                 <p><b>Description: </b>{element.description}</p>
